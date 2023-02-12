@@ -1,0 +1,63 @@
+.experience__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.experience__content {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.experience{
+    text-align: center;
+    color: var(--color-primary);
+}
+.experience__content:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+.experience__content h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+.experience__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+}
+.experience__details{
+    display: flex;
+    gap: 1rem
+}
+.experience__details-icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+@media screen and (max-width: 1024px) {
+   .experience-container{
+    grid-template-columns: 1fr;
+   }
+   .experience-container{
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+   }
+   .experience__content{
+    padding: 1rem;
+   }
+    }
+    /* ********Mediaquaries (Small Devices) ******* */
+    @media screen and (max-width: 600px) {
+        .experience-container{
+            gap: 1rem;
+        }
+        .experience-container{
+            width: 100%;
+            padding: 2rem 1rem;
+        }
+    }
